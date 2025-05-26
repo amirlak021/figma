@@ -1,6 +1,6 @@
 body {
-    width: 1728px;
-    height: 1550px;
+    width: 100%;
+    height: 100%;
     overflow-x: hidden;
     font-family: sans-serif;
 }
@@ -29,7 +29,7 @@ body {
   display: flex;
   gap: 60px;
   flex-wrap: wrap;
-  margin: 230 60 0 0;
+  margin: 450 140 0 0;
 }
 
 .column{
@@ -84,8 +84,44 @@ body {
     padding: 12px 160px;
     border: none;
     border-radius: 50px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-family: system-ui;
     cursor: pointer;
     z-index: 1;
     pointer-events: auto;
+}
+
+.icons-space {
+    width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  padding: 2rem;
+  box-sizing: border-box;
+  
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem 8rem; 
+  justify-items: center;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  justify-content: center;
+  text-align: left;
+}
+
+.icon p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1d1d1f;
+  line-height: 1.3;
 }

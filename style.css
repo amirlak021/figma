@@ -91,23 +91,39 @@ body {
 }
 
 .icons-space {
-    width: 100%;
-  max-width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  min-height: 100vh; 
-  padding: 2rem;
-  box-sizing: border-box;
-  
+  padding: 60px 20px;
+  text-align: center;
 }
 
+.icons-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.icons-subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  color: #555;
+  margin: 0;
+  line-height: 1.1;
+  padding-top: 2px;
+  padding-bottom: 24px;
+}
+
+
 .icons {
-  display: grid;
+   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 4rem 8rem; 
+  column-gap: 15rem; 
+  row-gap: clamp(1rem, 5vw, 5rem); 
   justify-items: center;
   align-items: center;
+  padding-top: 120px;
 }
 
 .icon {
@@ -120,7 +136,7 @@ body {
 
 .icon p {
   margin: 0;
-  font-size: 1rem;
+  font-size: 24px;
   font-weight: 600;
   color: #1d1d1f;
   line-height: 1.3;
